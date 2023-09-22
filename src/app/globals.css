@@ -2,26 +2,49 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: greenyellow;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  position: fixed;
+  z-index: 1000;
+  height: 10vh;
+  width: 100%;
+  -webkit-transition: all ease-out 0.5s;
+  -moz-transition: all ease-out 0.5s;
+  -o-transition: all ease-out 0.5s;
+  transition: all ease-out 0.5s;
+  padding-top: 5px !important;
+}
+
+.header-scrolled {
+  height: 6vh !important;
+  position: fixed;
+  width: 100vw;
+  z-index: 1000;
+  padding-top: 0 !important;
+}
+
+.h-6 {
+  width: 3rem !important;
+}
+.w-6 {
+  height: 3rem !important;
+}
+
+@media screen and (max-width: 639px) {
+  .hero-title {
+    font-size: 2.8rem !important;
+  }
+  .space-adjustment {
+    padding-top: 6rem !important;
+  }
 }
