@@ -37,8 +37,8 @@ const Header = () => {
     <header
       className={`${
         headerScrolled
-          ? "header-scrolled bg-violet-400/90 drop-shadow-xl"
-          : "header h-[10vh] w-screen fixed top-0 z-50 bg-transparent drop-shadow-xl"
+          ? "header-scrolled bg-black/80 drop-shadow-sm"
+          : "header h-[10vh] w-screen fixed top-0 z-50 bg-transparent drop-shadow-sm"
       }`}
     >
       <nav
@@ -75,10 +75,10 @@ const Header = () => {
               className={`${
                 item.href === path
                   ? headerScrolled
-                    ? "text-md font-semibold leading-6 uppercase text-black py-2 border-b-2"
+                    ? "text-md font-semibold leading-6 uppercase text-pink-300 py-2 border-b-2"
                     : "text-md font-semibold leading-6 uppercase text-white py-2"
                   : headerScrolled
-                  ? "text-md font-semibold leading-6 uppercase text-black py-2"
+                  ? "text-md font-semibold leading-6 uppercase text-white py-2"
                   : "text-md font-semibold leading-6 uppercase text-white py-2"
               }`}
             >
