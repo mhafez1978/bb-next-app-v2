@@ -2,6 +2,7 @@ import Hero from "@/components/hero";
 import SocialProof from "@/components/social-proof";
 import ServicesSection from "@/components/services-section";
 import DesignProcess from "@/components/design-process";
+import TestimonialSlider from "@/components/testimonials-slider";
 
 export const metadata: Metadata = {
   title: "Blooming Brands | Home",
@@ -14,7 +15,7 @@ const Home = () => {
       <Hero />
       <SocialProof />
       <ServicesSection />
-      {/* <DesignProcess /> */}
+      <TestimonialSlider />
     </>
   );
 };

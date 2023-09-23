@@ -37,8 +37,8 @@ const Header = () => {
     <header
       className={`${
         headerScrolled
-          ? "header-scrolled bg-black/80 drop-shadow-sm"
-          : "header h-[10vh] w-screen fixed top-0 z-50 bg-transparent drop-shadow-sm"
+          ? "header-scrolled bg-gradient-to-r from-gray-900 via-black to-gray-900 drop-shadow-sm"
+          : "header h-[10vh] w-screen fixed top-0 z-50 bg-gradient-to-r from-gray-900 via-black to-gray-900 drop-shadow-sm"
       }`}
     >
       <nav
@@ -52,8 +52,8 @@ const Header = () => {
               src="https://tailwindui.com/img/logos/mark.svg"
               alt=""
             /> */}
-            <span className="text-2xl text-white font-black">
-              Blooming Brands
+            <span className="text-2xl font-black bg-gradient-to-r from-amber-400 via-red-700 to-amber-300 inline-block text-transparent bg-clip-text">
+              blooming brands
             </span>
           </a>
         </div>
@@ -75,8 +75,8 @@ const Header = () => {
               className={`${
                 item.href === path
                   ? headerScrolled
-                    ? "text-md font-semibold leading-6 uppercase text-pink-300 py-2 border-b-2"
-                    : "text-md font-semibold leading-6 uppercase text-white py-2"
+                    ? "text-md font-semibold leading-6 uppercase text-amber-400 py-2 border-b-2"
+                    : "text-md font-semibold leading-6 uppercase text-amber-400 py-2"
                   : headerScrolled
                   ? "text-md font-semibold leading-6 uppercase text-white py-2"
                   : "text-md font-semibold leading-6 uppercase text-white py-2"

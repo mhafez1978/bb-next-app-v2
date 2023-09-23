@@ -7,10 +7,7 @@ html {
 }
 
 body {
-  background-color: greenyellow;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  top: 0;
 }
 
 .header {
@@ -22,7 +19,8 @@ body {
   -moz-transition: all ease-out 0.5s;
   -o-transition: all ease-out 0.5s;
   transition: all ease-out 0.5s;
-  padding-top: 5px !important;
+  padding-top: 2.5vh !important;
+  background-color: black;
 }
 
 .header-scrolled {
@@ -31,6 +29,8 @@ body {
   width: 100vw;
   z-index: 1000;
   padding-top: 0 !important;
+  background-color: black;
+  padding-top: 3px !important;
 }
 
 .h-6 {
