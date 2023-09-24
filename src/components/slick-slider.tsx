@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import React, { useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -21,34 +22,61 @@ const MySlider = () => {
     <div className="w-full mx-auto">
       <Slider {...settings}>
         <div className="mr-2">
-          <img src="/images/cpanel-logo.png" width="200" alt="cPanel" />
+          <Image
+            src="/images/cpanel-logo.png"
+            width={180}
+            height={54}
+            alt="cPanel"
+          />
         </div>
         <div className="mr-2">
-          <img src="/images/azure-logo.png" width="200" alt="azure" />
+          <Image
+            src="/images/azure-logo.png"
+            width={180}
+            height={54}
+            alt="azure"
+          />
         </div>
         <div className="mr-2">
-          <img src="/images/aws-logo.png" width="200" alt="aws" />
+          <Image src="/images/aws-logo.png" width={200} height={64} alt="aws" />
         </div>
         <div className="mr-2">
-          <img src="/images/do-logo.png" width="200" alt="digital ocean" />
+          <Image
+            src="/images/do-logo.png"
+            width={180}
+            height={54}
+            alt="digital ocean"
+          />
         </div>
         <div className="mr-2">
-          <img src="/images/netlify-logo.png" width="200" alt="Netlify" />
+          <Image
+            src="/images/netlify-logo.png"
+            width={180}
+            height={54}
+            alt="Netlify"
+          />
         </div>
         <div className="mr-2">
-          <img src="/images/heroku-logo.png" width="200" alt="Heroku" />
+          <Image
+            src="/images/heroku-logo.png"
+            width={180}
+            height={54}
+            alt="Heroku"
+          />
         </div>
         <div className="mr-2">
-          <img
+          <Image
             src="/images/google-ads-logo2.png"
-            width="200"
+            width={180}
+            height={54}
             alt="Google Ads"
           />
         </div>
         <div className="mr-2">
-          <img
+          <Image
             src="/images/ms-ads-logo.png"
-            width="200"
+            width={180}
+            height={54}
             alt="Microsoft Advertisement"
           />
         </div>

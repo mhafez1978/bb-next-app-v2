@@ -1,15 +1,10 @@
 "use client";
 import React, { useState } from "react";
+
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
-const ArrowLeft = () => {
-  return <div className="slick-arrow slick-prev">Previous</div>;
-};
-const ArrowRight = () => {
-  return <div className="slick-arrow slick-next">Next</div>;
-};
+import Image from "next/image";
 
 const TestimonialSlider = () => {
   const [settings] = useState({
@@ -26,34 +21,68 @@ const TestimonialSlider = () => {
   });
 
   return (
-    <div className="w-[60vw] mx-auto mt-28">
-      <h3 className="text-center text-3xl font-semibold mb-8">
+    <div className="w-[60vw] min-h-[30vh] mx-auto p-12">
+      <h3 className="text-center text-3xl text-black font-semibold mb-8">
         What our customers are saying
       </h3>
       <Slider {...settings} className="h-full">
         <div>
           <figure className="max-w-screen-md mx-auto text-center">
-            <svg
-              className="w-10 h-10 mx-auto mb-3 text-gray-400 dark:text-gray-600"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="currentColor"
-              viewBox="0 0 18 14"
-            >
-              <path d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z" />
-            </svg>
+            <center>
+              <svg
+                width="62"
+                height="62"
+                viewBox="0 0 62 62"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M44 7H4V37H11V42L21 37H44V7Z"
+                  fill="none"
+                  stroke="#333"
+                  strokeWidth="4"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+                <path
+                  d="M31 16V17"
+                  stroke="#333"
+                  strokeWidth="4"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+                <path
+                  d="M17 16V17"
+                  stroke="#333"
+                  strokeWidth="4"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+                <path
+                  d="M31 25C31 25 29 29 24 29C19 29 17 25 17 25"
+                  stroke="#333"
+                  strokeWidth="4"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </center>
+
             <blockquote>
               <p className="text-2xl italic font-medium text-gray-900 dark:text-white">
-                "Blooming Brands team delivered on their promise. We&apos;ll be
-                coming back with more projects."
+                &quot;Blooming Brands are experts in everything web and
+                delivered on their promise. We&apos;ll be coming back with more
+                projects&quot;
               </p>
             </blockquote>
             <figcaption className="flex items-center justify-center mt-6 space-x-3">
-              <img
+              {/* <Image
+                width={50}
+                height={50}
                 className="w-6 h-6 rounded-full"
-                src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png"
+                src="/images/michael-gouch.png"
                 alt="profile picture"
-              />
+              /> */}
               <div className="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
                 <cite className="pr-3 font-medium text-gray-900 dark:text-white">
                   Frank vituttie
@@ -67,27 +96,59 @@ const TestimonialSlider = () => {
         </div>
         <div>
           <figure className="max-w-screen-md mx-auto text-center">
-            <svg
-              className="w-10 h-10 mx-auto mb-3 text-gray-400 dark:text-gray-600"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="currentColor"
-              viewBox="0 0 18 14"
-            >
-              <path d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z" />
-            </svg>
+            <center>
+              <svg
+                width="62"
+                height="62"
+                viewBox="0 0 62 62"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M44 7H4V37H11V42L21 37H44V7Z"
+                  fill="none"
+                  stroke="#333"
+                  strokeWidth="4"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+                <path
+                  d="M31 16V17"
+                  stroke="#333"
+                  strokeWidth="4"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+                <path
+                  d="M17 16V17"
+                  stroke="#333"
+                  strokeWidth="4"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+                <path
+                  d="M31 25C31 25 29 29 24 29C19 29 17 25 17 25"
+                  stroke="#333"
+                  strokeWidth="4"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </center>
             <blockquote>
               <p className="text-2xl italic font-medium text-gray-900 dark:text-white">
-                "Very professional, on-time, and on-budget. I would recommend
-                Blooming Brands for any project."
+                &quot;Very professional, on-time, and on-budget. I would
+                recommend Blooming Brands for any project&quot;
               </p>
             </blockquote>
             <figcaption className="flex items-center justify-center mt-6 space-x-3">
-              <img
+              {/* <Image
+                width={50}
+                height={50}
                 className="w-6 h-6 rounded-full"
-                src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png"
+                src="/images/michael-gouch.png"
                 alt="profile picture"
-              />
+              /> */}
               <div className="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
                 <cite className="pr-3 font-medium text-gray-900 dark:text-white">
                   Nic Smits
@@ -101,34 +162,66 @@ const TestimonialSlider = () => {
         </div>
         <div>
           <figure className="max-w-screen-md mx-auto text-center">
-            <svg
-              className="w-10 h-10 mx-auto mb-3 text-gray-400 dark:text-gray-600"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="currentColor"
-              viewBox="0 0 18 14"
-            >
-              <path d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z" />
-            </svg>
+            <center>
+              <svg
+                width="62"
+                height="62"
+                viewBox="0 0 62 62"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M44 7H4V37H11V42L21 37H44V7Z"
+                  fill="none"
+                  stroke="#333"
+                  strokeWidth="4"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+                <path
+                  d="M31 16V17"
+                  stroke="#333"
+                  strokeWidth="4"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+                <path
+                  d="M17 16V17"
+                  stroke="#333"
+                  strokeWidth="4"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+                <path
+                  d="M31 25C31 25 29 29 24 29C19 29 17 25 17 25"
+                  stroke="#333"
+                  strokeWidth="4"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </center>
             <blockquote>
               <p className="text-2xl italic font-medium text-gray-900 dark:text-white">
-                "Flowbite is just awesome. It contains tons of predesigned
-                components and pages starting from login screen to complex
-                dashboard. Perfect choice for your next SaaS application."
+                &quot;Blooming Brands software team was able to collaborate with
+                our in-house team, together we created a modern intranet website
+                for internal use&quot;
               </p>
             </blockquote>
             <figcaption className="flex items-center justify-center mt-6 space-x-3">
-              <img
+              {/* <Image
+                width={50}
+                height={50}
                 className="w-6 h-6 rounded-full"
-                src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png"
+                src="/images/michael-gouch.png"
                 alt="profile picture"
-              />
+              /> */}
               <div className="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
                 <cite className="pr-3 font-medium text-gray-900 dark:text-white">
-                  Mohamed Gough
+                  Ramesh Akbar
                 </cite>
                 <cite className="pl-3 text-sm text-gray-500 dark:text-gray-400">
-                  CEO at Google
+                  Foudner DynamicConnections
                 </cite>
               </div>
             </figcaption>

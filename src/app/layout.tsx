@@ -33,7 +33,7 @@ export default function RootLayout({
             rel="stylesheet"
           />
         </head>
-        <body className={inter.className}>
+        <body>
           <noscript>You need to enable JavaScript to run this app.</noscript>
           {/* <!--
           This HTML file is a template.
@@ -48,18 +48,17 @@ export default function RootLayout({
           <Header />
           {children}
           <Footer />
-
-          <Script
-            async
+          {/* <Script
+            strategy="afterInteractive"
             src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-          />
+          /> */}
           <Script
-            async
-            src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"
-          />
-          <Script
-            async
+            strategy="afterInteractive"
             src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"
+          />
+          <Script
+            strategy="afterInteractive"
+            src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"
           />
         </body>
       </html>

@@ -3,7 +3,6 @@ import type { Config } from "tailwindcss";
 const config: Config = {
   content: [
     "./node_modules/flowbite/**/*.js",
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/**/*.{js,ts,jsx,tsx}",
@@ -13,20 +12,17 @@ const config: Config = {
   darkMode: "class",
   theme: {
     extend: {
-      colors: {
-        primary: {
-          "50": "#eff6ff",
-          "100": "#dbeafe",
-          "200": "#bfdbfe",
-          "300": "#93c5fd",
-          "400": "#60a5fa",
-          "500": "#3b82f6",
-          "600": "#2563eb",
-          "700": "#1d4ed8",
-          "800": "#1e40af",
-          "900": "#1e3a8a",
-          "950": "#172554",
-        },
+      backgroundImage: {
+        "blooming-bg": "url('/images/blooming-bg.png')",
+        "hero-bg": "url('/images/hero-bg.webp')",
+        "micheal-gouch": "url('/images/michael-gouch.png')",
+        "web-design": "url('/images/web-design.webp')",
+        "full-stack-apps": "url('/images/full-stack-apps.webp')",
+        "mobile-apps": "url('/images/mobile-apps.png')",
+        "e-commerce": "url('/images/e-commerce.webp')",
+        "online-marketing": "url('/images/online-marketing.webp')",
+        "creative-content": "url('/images/creative-content.webp')",
+        "idea-bg": "url('/images/idea-bg.webp')",
       },
     },
     fontFamily: {

@@ -5,7 +5,6 @@
 html {
   scroll-behavior: smooth;
 }
-
 body {
   top: 0;
 }
@@ -31,6 +30,12 @@ body {
   padding-top: 0 !important;
   background-color: black;
   padding-top: 3px !important;
+}
+
+.slick-slide img {
+  display: block;
+  width: 180px !important;
+  height: 54px !important;
 }
 
 .h-6 {

@@ -1,4 +1,5 @@
 "use client";
+
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { Dialog } from "@headlessui/react";
@@ -21,7 +22,7 @@ const Header = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 10) {
+      if (window.scrollY > 6) {
         setHeaderScrolled(true);
       } else {
         setHeaderScrolled(false);
@@ -37,8 +38,8 @@ const Header = () => {
     <header
       className={`${
         headerScrolled
-          ? "header-scrolled bg-gradient-to-r from-gray-900 via-black to-gray-900 drop-shadow-sm"
-          : "header h-[10vh] w-screen fixed top-0 z-50 bg-gradient-to-r from-gray-900 via-black to-gray-900 drop-shadow-sm"
+          ? "header-scrolled bg-gradient-to-r from-black/90 via-black to-black/70 drop-shadow-sm"
+          : "header h-[10vh] w-screen fixed top-0 z-50 bg-gradient-to-r from-black/90 via-black to-black/70 drop-shadow-sm"
       }`}
     >
       <nav
@@ -47,11 +48,13 @@ const Header = () => {
       >
         <div className="flex lg:flex-1">
           <a href="/" className="flex flex-row py-2">
-            {/* <img
+            <Image
               className="h-8 w-auto mr-4"
-              src="https://tailwindui.com/img/logos/mark.svg"
-              alt=""
-            /> */}
+              src="/images/logo.png"
+              width={50}
+              height={50}
+              alt="bb"
+            />
             <span className="text-2xl font-black bg-gradient-to-r from-amber-400 via-red-700 to-amber-300 inline-block text-transparent bg-clip-text">
               blooming brands
             </span>
@@ -103,11 +106,6 @@ const Header = () => {
           <div className="flex items-center justify-between">
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Blooming Brands</span>
-              {/* <img
-                className="h-8 w-auto"
-                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                alt=""
-              /> */}
             </a>
             <button
               type="button"
