@@ -13,8 +13,8 @@ const FirstCallToAction = () => {
       <div className="h-full flex flex-col justify-center items-center z-30">
         <div className="space-adjustment mx-auto max-w-4xl sm:max-w-2xl">
           <div className="flex flex-col justify-center items-center text-center py-12 sm:py-4 sm:px-4">
-            <h1 className="hero-title font-bold text-white text-7xl sm:text-4xl leading-tight ">
-              Blazing Fast Websites Built For Conversion
+            <h1 className="hero-title w-[80%] font-bold text-white text-7xl sm:text-4xl leading-tight ">
+              Blazing Fast Data Driven Websites.
             </h1>
             <p className="mt-6 text-lg leading-8 text-white max-w-3xl">
               We specialize in crafting responsive websites that focus on user

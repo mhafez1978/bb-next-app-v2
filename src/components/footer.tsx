@@ -13,14 +13,20 @@ const Footer = () => {
               </span>
             </a>
             <div className="mb-4">
-              <h6 className="text-lg">Mailing Address:</h6>
+              <h2 className="text-sm font-semibold text-amber-400 uppercase dark:text-white">
+                US Mailing Address
+              </h2>
               <address className="text-sm">
-                141 John Street, R14 <br />
-                Lowell, MA 01852
+                <p style={{ fontSize: ".85rem" }}>
+                  141 John Street, R14 <br />
+                  Lowell, MA 01852
+                </p>
               </address>
             </div>
-            <div>
-              <h6 className="text-lg">Phone:</h6>
+            <div style={{ fontSize: ".85rem" }}>
+              <h2 className="text-sm font-semibold text-amber-400 uppercase dark:text-white">
+                US Phone
+              </h2>
               <p className="text-sm">+1 978 888 7688</p>
             </div>
           </div>
@@ -29,7 +35,10 @@ const Footer = () => {
               <h2 className="mb-6 text-sm font-semibold text-amber-400 uppercase dark:text-white">
                 Resources
               </h2>
-              <ul className="text-amber-400 dark:text-gray-400">
+              <ul
+                style={{ fontSize: ".85rem" }}
+                className="text-amber-400 dark:text-gray-400"
+              >
                 <li className="">
                   <a href="#" className="hover:underline">
                     Services
@@ -56,7 +65,10 @@ const Footer = () => {
               <h2 className="mb-6 text-sm font-semibold text-amber-400 uppercase dark:text-white">
                 Stay Connected
               </h2>
-              <ul className="text-amber-400 dark:text-gray-400">
+              <ul
+                style={{ fontSize: ".85rem" }}
+                className="text-amber-400 dark:text-gray-400"
+              >
                 <li className="">
                   <a href="#" className="hover:underline ">
                     Facebook
@@ -86,12 +98,25 @@ const Footer = () => {
             </div>
             <div>
               <h2 className="mb-6 text-sm font-semibold text-amber-400 uppercase dark:text-white">
-                Legal
+                Other
               </h2>
-              <ul className="text-amber-400 dark:text-gray-400">
+              <ul
+                style={{ fontSize: ".85rem" }}
+                className="text-amber-400 dark:text-gray-400"
+              >
                 <li className="">
                   <a href="#" className="hover:underline">
-                    Privacy Policy
+                    Employees
+                  </a>
+                </li>
+                <li className="">
+                  <a href="#" className="hover:underline">
+                    Clients
+                  </a>
+                </li>
+                <li className="">
+                  <a href="#" className="hover:underline">
+                    Investors
                   </a>
                 </li>
                 <li>
