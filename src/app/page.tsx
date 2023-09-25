@@ -13,50 +13,50 @@ const Home = () => {
   return (
     <>
       <motion.div
-        initial={{ x: "100vw" }}
-        animate={{ x: 0 }}
-        transition={{ delay: 0.5 }}
+        initial={{ opacity: 0, x: "100vw" }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ delay: 0.1 }}
       >
         <FirstCallToAction />
       </motion.div>
       <motion.div
-        initial={{ x: "-100vw" }}
-        animate={{ x: 0 }}
-        transition={{ delay: 1 }}
+        initial={{ opacity: 0, x: "-100vw" }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ delay: 0.3 }}
       >
         <SocialProof />
       </motion.div>
       <motion.div
-        initial={{ x: "100vw" }}
-        whileInView={{ x: 0 }}
-        transition={{ delay: 1.5 }}
+        initial={{ opacity: 0, x: "100vw" }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ delay: 0.6 }}
         viewport={{ once: true }}
       >
         <AboutSection />
       </motion.div>
       <motion.div
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ delay: 1.5 }}
+        initial={{ opacity: 1, x: "100vw" }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ delay: 1.0 }}
         viewport={{ once: true }}
       >
         <ServicesSection />
       </motion.div>
       <motion.div
-        initial={{ x: "100vw" }}
-        whileInView={{ x: 0 }}
-        transition={{ delay: 1.5 }}
-        viewport={{ once: true }}
-      >
-        <TestimonialSlider />
-      </motion.div>
-      <motion.div
         initial={{ x: "-100vw" }}
         whileInView={{ x: 0 }}
-        transition={{ delay: 1.5 }}
+        transition={{ delay: 1.0 }}
         viewport={{ once: true }}
       >
         <SecondCallToAction />
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, x: "100vw" }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ delay: 1.0 }}
+        viewport={{ once: true }}
+      >
+        <TestimonialSlider />
       </motion.div>
     </>
   );

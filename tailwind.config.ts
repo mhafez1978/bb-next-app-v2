@@ -15,6 +15,7 @@ const config: Config = {
       backgroundImage: {
         "blooming-bg": "url('/images/blooming-bg.png')",
         "hero-bg": "url('/images/hero-bg.webp')",
+        "hero2-bg": "url('/images/hero2-bg.webp')",
         "micheal-gouch": "url('/images/michael-gouch.png')",
         "web-design": "url('/images/web-design.webp')",
         "full-stack-apps": "url('/images/full-stack-apps.webp')",
@@ -23,6 +24,7 @@ const config: Config = {
         "online-marketing": "url('/images/online-marketing.webp')",
         "creative-content": "url('/images/creative-content.webp')",
         "idea-bg": "url('/images/idea-bg.webp')",
+        "newsletter-bg": "url('/images/newsletter.webp'')",
       },
     },
     fontFamily: {

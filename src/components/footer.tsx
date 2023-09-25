@@ -3,15 +3,26 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="w-full h-[40vh] bg-gradient-to-r from-gray-900 via-black to-gray-900 text-amber-400 sm:p-6 dark:bg-gray-800">
+    <footer className="w-full min-h-[40vh] bg-gradient-to-r from-gray-900 via-black to-gray-900 text-amber-400 sm:p-6 dark:bg-gray-800">
       <div className="mx-auto max-w-7xl pt-12">
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
             <a href="#" className="flex items-center">
-              <span className="self-center text-2xl font-semibold whitespace-nowrap text-amber-400 dark:text-white">
+              <span className="text-2xl font-black mb-4 whitespace-nowrap text-amber-400 dark:text-white">
                 blooming brands
               </span>
             </a>
+            <div className="mb-4">
+              <h6 className="text-lg">Mailing Address:</h6>
+              <address className="text-sm">
+                141 John Street, R14 <br />
+                Lowell, MA 01852
+              </address>
+            </div>
+            <div>
+              <h6 className="text-lg">Phone:</h6>
+              <p className="text-sm">+1 978 888 7688</p>
+            </div>
           </div>
           <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
             <div>
@@ -19,40 +30,56 @@ const Footer = () => {
                 Resources
               </h2>
               <ul className="text-amber-400 dark:text-gray-400">
-                <li className="mb-4">
+                <li className="">
                   <a href="#" className="hover:underline">
-                    Flowbite
+                    Services
+                  </a>
+                </li>
+                <li className="">
+                  <a href="#" className="hover:underline">
+                    Portfolio
                   </a>
                 </li>
                 <li>
-                  <a
-                    href="https://tailwindcss.com/"
-                    className="hover:underline"
-                  >
-                    Tailwind CSS
+                  <a href="#" className="hover:underline">
+                    Latest News
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="hover:underline">
+                    Contact
                   </a>
                 </li>
               </ul>
             </div>
             <div>
               <h2 className="mb-6 text-sm font-semibold text-amber-400 uppercase dark:text-white">
-                Follow us
+                Stay Connected
               </h2>
               <ul className="text-amber-400 dark:text-gray-400">
-                <li className="mb-4">
-                  <a
-                    href="https://github.com/themesberg/flowbite"
-                    className="hover:underline "
-                  >
-                    Github
+                <li className="">
+                  <a href="#" className="hover:underline ">
+                    Facebook
                   </a>
                 </li>
                 <li>
-                  <a
-                    href="https://discord.gg/4eeurUVvTy"
-                    className="hover:underline"
-                  >
-                    Discord
+                  <a href="#" className="hover:underline">
+                    LinkedIn
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="hover:underline">
+                    Twitter - X
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="hover:underline">
+                    Instagram
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="hover:underline">
+                    GitHub
                   </a>
                 </li>
               </ul>
@@ -62,7 +89,7 @@ const Footer = () => {
                 Legal
               </h2>
               <ul className="text-amber-400 dark:text-gray-400">
-                <li className="mb-4">
+                <li className="">
                   <a href="#" className="hover:underline">
                     Privacy Policy
                   </a>

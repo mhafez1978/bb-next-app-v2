@@ -4,21 +4,27 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 body {
+  background-color: #222222;
   top: 0;
+  left: 0;
+  right: 0;
+  overflow-x: hidden;
 }
 
 .header {
   position: fixed;
   z-index: 1000;
   height: 10vh;
-  width: 100%;
+  width: 100vw;
   -webkit-transition: all ease-out 0.5s;
   -moz-transition: all ease-out 0.5s;
   -o-transition: all ease-out 0.5s;
   transition: all ease-out 0.5s;
-  padding-top: 2.5vh !important;
+  padding-top: 2vh !important;
+  padding-bottom: 2vh !important;
   background-color: black;
 }
 
@@ -43,6 +49,20 @@ body {
 }
 .w-6 {
   height: 3rem !important;
+}
+
+.services img {
+  object-fit: cover !important;
+  position: absolute !important;
+  width: 960px !important;
+  height: 560px !important;
+  z-index: 10;
+  transition: transform 0.5s ease;
+}
+.services img:hover {
+  transform: scale(1.5);
+  -webkit-filter: blur(3px);
+  filter: blur(3px);
 }
 
 @media screen and (max-width: 639px) {

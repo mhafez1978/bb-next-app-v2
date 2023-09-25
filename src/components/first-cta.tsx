@@ -2,8 +2,14 @@
 
 const FirstCallToAction = () => {
   return (
-    <div className="relative w-full lg:h-[80vh] sm:h-[50vh] flex flex-col justify-center items-center bg-fixed bg-[url('/images/hero-bg.webp')] bg-cover bg-top bg-no-repeat">
-      <div className="overlay absolute lg:h-[80vh] sm:h-[71.5vh] top-0 left-0 right-0 z-20 bg-black/60"></div>
+    <div
+      className="w-full left-0 right-0 overflow-x-hidden lg:h-[100vh] md:h-[100vh] sm:h-[100vh] flex flex-col justify-center items-center bg-fixed"
+      style={{
+        backgroundImage: 'url("/images/hero-bg.webp")',
+        backgroundSize: "cover",
+        backgroundAttachment: "fixed",
+      }}
+    >
       <div className="h-full flex flex-col justify-center items-center z-30">
         <div className="space-adjustment mx-auto max-w-4xl sm:max-w-2xl">
           <div className="flex flex-col justify-center items-center text-center py-12 sm:py-4 sm:px-4">

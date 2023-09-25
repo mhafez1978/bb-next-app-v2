@@ -38,8 +38,8 @@ const Header = () => {
     <header
       className={`${
         headerScrolled
-          ? "header-scrolled bg-gradient-to-r from-black/90 via-black to-black/70 drop-shadow-sm"
-          : "header h-[10vh] w-screen fixed top-0 z-50 bg-gradient-to-r from-black/90 via-black to-black/70 drop-shadow-sm"
+          ? "w-full top-0 pb-12 header-scrolled px-8 bg-gradient-to-r from-gray-900 via-black to-gray-900 drop-shadow-sm"
+          : "w-full fixed top-0 min-h-[10vh] px-8 py-[20px] z-50 bg-transparent drop-shadow-sm"
       }`}
     >
       <nav
@@ -48,14 +48,7 @@ const Header = () => {
       >
         <div className="flex lg:flex-1">
           <a href="/" className="flex flex-row py-2">
-            <Image
-              className="h-8 w-auto mr-4"
-              src="/images/logo.png"
-              width={50}
-              height={50}
-              alt="bb"
-            />
-            <span className="text-2xl font-black bg-gradient-to-r from-amber-400 via-red-700 to-amber-300 inline-block text-transparent bg-clip-text">
+            <span className="lg:text-2xl md:text-lg sm:text-md font-black bg-gradient-to-r from-amber-200 via-slate-200/90 to-amber-400 inline-block text-transparent bg-clip-text">
               blooming brands
             </span>
           </a>
@@ -70,19 +63,24 @@ const Header = () => {
             <Bars3Icon className="h-6 w-6" aria-hidden="true" color="#fff" />
           </button>
         </div>
-        <div className="hidden lg:flex lg:gap-x-12">
+        <div className="hidden lg:flex lg:gap-x-8">
           {navigation.map((item) => (
             <a
+              style={{
+                fontSize: ".85rem",
+                transition: "transform .6s ease",
+                fontWeight: "800",
+              }}
               key={item.id}
               href={item.href}
               className={`${
-                item.href === path
-                  ? headerScrolled
-                    ? "text-md font-semibold leading-6 uppercase text-amber-400 py-2 border-b-2"
-                    : "text-md font-semibold leading-6 uppercase text-amber-400 py-2"
-                  : headerScrolled
-                  ? "text-md font-semibold leading-6 uppercase text-white py-2"
-                  : "text-md font-semibold leading-6 uppercase text-white py-2"
+                headerScrolled
+                  ? item.href === path
+                    ? "text-amber-400"
+                    : "text-white hover:text-amber-400"
+                  : item.href !== path
+                  ? "text-white hover:text-amber-900"
+                  : "text-amber-600 hover:text-slate-800"
               }`}
             >
               {item.name}
@@ -90,8 +88,16 @@ const Header = () => {
           ))}
         </div>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a href="#" className="text-sm font-semibold leading-6 text-white">
-            Toggle Dark / Light <span aria-hidden="true">&rarr;</span>
+          <a
+            href="#"
+            className="text-white hover:text-amber-400"
+            style={{
+              fontSize: ".85rem",
+              transition: "transform .6s ease",
+              fontWeight: "800",
+            }}
+          >
+            Clients <span aria-hidden="true">&rarr;</span>
           </a>
         </div>
       </nav>

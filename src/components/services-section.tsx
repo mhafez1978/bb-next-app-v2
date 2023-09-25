@@ -1,4 +1,6 @@
 "use client";
+import { url } from "inspector";
+import Image from "next/image";
 import React from "react";
 
 const ServicesSection = () => {
@@ -6,38 +8,78 @@ const ServicesSection = () => {
     <section id="services-section" className="w-[100vw] h-[80vh]">
       <div className="w-full mx-auto">
         <div className="w-full sm:grid sm:grid-cols-1 md:grid md:grid-cols-2 lg:grid lg:grid-cols-3 text-white">
-          <div className="h-[40vh] flex flex-col justify-center items-center text-center bg-[url('/images/web-design.webp')] bg-cover bg-center bg-no-repeat cursor-pointer">
-            <h3 className="mb-2 text-2xl font-bold hover:scale-125 transition-all duration-30">
-              Website Web Design
-            </h3>
+          <div className="services relative h-[50vh] overflow-hidden flex flex-col justify-center items-center text-center cursor-pointer">
+            <Image
+              className="absolute z-20"
+              src="/images/web-design.webp"
+              alt=""
+              width={600}
+              height={400}
+            />
+            <h3 className="z-40 mb-2 text-2xl font-bold">Website Web Design</h3>
           </div>
-          <div className=" h-[40vh] flex flex-col justify-center items-center text-center bg-[url('/images/full-stack-apps.webp')] bg-cover bg-center bg-no-repeat cursor-pointer">
-            <h3 className="mb-2 text-2xl font-bold dark:text-white hover:scale-125 transition-all duration-30">
+          <div className="services relative h-[50vh] overflow-hidden flex flex-col justify-center items-center text-center cursor-pointer">
+            <Image
+              className="absolute z-20"
+              src="/images/full-stack-apps.webp"
+              alt=""
+              width={600}
+              height={400}
+            />
+            <h3 className="z-40 mb-2 text-2xl font-bold dark:text-white">
               Jamstack Applications3
             </h3>
           </div>
-          <div className=" h-[40vh] flex flex-col justify-center items-center text-center bg-[url('/images/e-commerce.webp')] bg-cover bg-center bg-no-repeat cursor-pointer">
-            <h3 className="mb-2 text-2xl font-bold dark:text-white hover:scale-125 transition-all duration-30">
+          <div className="services relative h-[50vh] overflow-hidden flex flex-col justify-center items-center text-center cursor-pointer">
+            <Image
+              className="absolute z-20"
+              src="/images/e-commerce.webp"
+              alt=""
+              width={600}
+              height={400}
+            />
+            <h3 className="z-40 mb-2 text-2xl font-bold dark:text-white">
               e-Commerce Solutions
             </h3>
           </div>
-          <div className=" h-[40vh] flex flex-col justify-center items-center text-center bg-[url('/images/online-marketing.webp')] bg-cover bg-top bg-no-repeat cursor-pointer">
-            <h3 className="mb-2 text-2xl font-bold dark:text-white hover:scale-125 transition-all duration-30">
+          <div className="services relative h-[50vh] overflow-hidden flex flex-col justify-center items-center text-center cursor-pointer">
+            <Image
+              className="absolute z-20"
+              src="/images/online-marketing.webp"
+              alt=""
+              width={600}
+              height={400}
+            />
+            <h3 className="z-40 mb-2 text-2xl font-bold dark:text-white">
               Online Marketing
             </h3>
           </div>
-          <div className=" h-[40vh] flex flex-col justify-center items-center text-center bg-[url('/images/creative-content.webp')] bg-cover bg-top bg-no-repeat cursor-pointer">
-            <h3 className="mb-2 text-2xl font-bold dark:text-white hover:scale-125 transition-all duration-30">
+          <div className="services relative h-[50vh] overflow-hidden flex flex-col justify-center items-center text-center cursor-pointer">
+            <Image
+              className="absolute z-20"
+              src="/images/creative-content.webp"
+              alt=""
+              width={600}
+              height={400}
+            />
+            <h3 className="z-40 mb-2 text-2xl font-bold dark:text-white">
               Content Management
             </h3>
           </div>
-          <div className=" h-[40vh] flex flex-col justify-center items-start px-8 bg-amber-400">
+          <div className="z-30 h-[50vh] flex flex-col justify-center items-start px-8 bg-amber-400">
             <form>
               <div
+                className="z-40 h-full"
                 style={{
                   border: "1px solid #fff",
                   padding: "1rem 1rem",
                   borderRadius: "15px",
+                  backgroundImage: "url('/images/newsletter-bg.webp')",
+                  backgroundPosition: "center center",
+                  backgroundSize: "contain",
+                  backgroundRepeat: "no-repeat",
+                  backgroundPositionX: "300px",
+                  backgroundPositionY: "-100px",
                 }}
               >
                 <div>
@@ -84,7 +126,7 @@ const ServicesSection = () => {
                   </h3>
                   <p
                     className="mb-2 text-black text-sm"
-                    style={{ width: "80%" }}
+                    style={{ width: "60%", fontSize: "50%", lineHeight: 1 }}
                   >
                     Subscribe to our monthly newsletter to receieve our latest
                     updates, news, and business online marketing deals and
@@ -111,8 +153,11 @@ const ServicesSection = () => {
                       required
                     />
                   </div>
-                  <div className="ml-3 text-md mt-2" style={{ width: "74%" }}>
-                    <p className="text-gray-900 text-sm">
+                  <div
+                    className="ml-3 text-md mt-2"
+                    style={{ width: "74%", fontSize: "40%" }}
+                  >
+                    <p className="text-gray-900">
                       I agree to opt-in and receive Blooming Brands LLC
                       newsletter, and other marketing communications. We do not
                       sell your email to third parties.

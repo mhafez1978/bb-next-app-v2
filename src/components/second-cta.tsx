@@ -3,8 +3,8 @@ import React from "react";
 
 const SecondCallToAction = () => {
   return (
-    <div className="w-full h-[60vh] flex flex-col justify-center items-center gap-10 bg-[url('/images/blooming-bg.png')] bg-cover bg-center bg-no-repeat bg-fixed">
-      <h3 className="text-center text-9xl text-slate-950 font-black mx-32">
+    <div className="w-full h-[50vh] mt-36 flex flex-col justify-center items-center bg-[url('/images/blooming-bg.webp')] bg-cover bg-fixed bg-center bg-no-repeat">
+      <h3 className="text-center text-6xl w-1/2 mx-auto mb-8 text-slate-950 font-black mx-32">
         your business will Bloom with us
       </h3>
       <button
