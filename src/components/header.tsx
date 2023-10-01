@@ -48,7 +48,11 @@ const Header = () => {
       >
         <div className="flex lg:flex-1">
           <a href="/" className="flex flex-row py-2">
-            <span className="lg:text-2xl md:text-lg sm:text-md font-black bg-gradient-to-r from-amber-200 via-slate-200/90 to-amber-400 inline-block text-transparent bg-clip-text">
+            <span
+              className={
+                "`${headerScrolled} && lg:text-2xl md:text-lg sm:text-md font-black bg-gradient-to-r from-white via-slate-200 to-amber-400 inline-block text-transparent bg-clip-text' font-black bg-gradient-to-r from-red-500 via-slate-200 to-black inline-block text-transparent bg-clip-text "
+              }
+            >
               blooming brands
             </span>
           </a>
@@ -79,8 +83,8 @@ const Header = () => {
                     ? "text-amber-400"
                     : "text-white hover:text-amber-400"
                   : item.href !== path
-                  ? "text-white hover:text-amber-900"
-                  : "text-amber-600 hover:text-slate-800"
+                  ? "text-black hover:text-blue-800"
+                  : "text-blue-800 hover:text-slate-800"
               }`}
             >
               {item.name}

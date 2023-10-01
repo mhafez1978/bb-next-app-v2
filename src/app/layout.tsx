@@ -2,7 +2,6 @@ import "./globals.css";
 import "flowbite";
 import "../../node_modules/flowbite/dist/flowbite.min.css";
 import "../../node_modules/tw-elements/dist/css/tw-elements.min.css";
-
 import type { Metadata } from "next";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
@@ -15,7 +14,7 @@ import Script from "next/script";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Blooming Brands",
+  title: `Blooming Brands | 404 Page Not Found`,
   description: "Websites and Online Marketing",
 };
 
@@ -48,10 +47,11 @@ export default function RootLayout({
           <Header />
           {children}
           <Footer />
-          {/* <Script
+
+          <Script
             strategy="afterInteractive"
             src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-          /> */}
+          />
           <Script
             strategy="afterInteractive"
             src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"

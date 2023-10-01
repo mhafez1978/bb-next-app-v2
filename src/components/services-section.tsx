@@ -1,5 +1,4 @@
 "use client";
-import { url } from "inspector";
 import Image from "next/image";
 import React from "react";
 
@@ -9,62 +8,89 @@ const ServicesSection = () => {
       <div className="w-full mx-auto">
         <div className="w-full sm:grid sm:grid-cols-1 md:grid md:grid-cols-2 lg:grid lg:grid-cols-3 text-white">
           <div className="services relative h-[50vh] overflow-hidden flex flex-col justify-center items-center text-center cursor-pointer">
-            <Image
-              className="absolute z-20"
-              src="/images/web-design.webp"
-              alt=""
-              width={600}
-              height={400}
-            />
-            <h3 className="z-40 mb-2 text-2xl font-bold">Website Web Design</h3>
+            <a
+              href="/services/#webdesign"
+              className="w-full h-full z-20 overflow-hidden flex flex-col justify-center items-center text-center cursor-pointer"
+            >
+              <Image
+                className="absolute z-20"
+                src="/images/web-design.webp"
+                alt=""
+                width={600}
+                height={400}
+              />
+              <h3 className="z-40 mb-2 text-2xl font-bold">
+                Website Web Design
+              </h3>
+            </a>
           </div>
           <div className="services relative h-[50vh] overflow-hidden flex flex-col justify-center items-center text-center cursor-pointer">
-            <Image
-              className="absolute z-20"
-              src="/images/full-stack-apps.webp"
-              alt=""
-              width={600}
-              height={400}
-            />
-            <h3 className="z-40 mb-2 text-2xl font-bold dark:text-white">
-              Jamstack Applications3
-            </h3>
+            <a
+              href="/services/#jamstack"
+              className="w-full h-full z-20 overflow-hidden flex flex-col justify-center items-center text-center cursor-pointer"
+            >
+              <Image
+                className="absolute z-20"
+                src="/images/full-stack-apps.webp"
+                alt=""
+                width={600}
+                height={400}
+              />
+              <h3 className="z-40 mb-2 text-2xl font-bold dark:text-white">
+                Jamstack Applications
+              </h3>
+            </a>
           </div>
           <div className="services relative h-[50vh] overflow-hidden flex flex-col justify-center items-center text-center cursor-pointer">
-            <Image
-              className="absolute z-20"
-              src="/images/e-commerce.webp"
-              alt=""
-              width={600}
-              height={400}
-            />
-            <h3 className="z-40 mb-2 text-2xl font-bold dark:text-white">
-              e-Commerce Solutions
-            </h3>
+            <a
+              href="/services/#ecommerce"
+              className="w-full h-full z-20 overflow-hidden flex flex-col justify-center items-center text-center cursor-pointer"
+            >
+              <Image
+                className="absolute z-20"
+                src="/images/e-commerce.webp"
+                alt=""
+                width={600}
+                height={400}
+              />
+              <h3 className="z-40 mb-2 text-2xl font-bold dark:text-white">
+                e-Commerce Solutions
+              </h3>
+            </a>
           </div>
           <div className="services relative h-[50vh] overflow-hidden flex flex-col justify-center items-center text-center cursor-pointer">
-            <Image
-              className="absolute z-20"
-              src="/images/online-marketing.webp"
-              alt=""
-              width={600}
-              height={400}
-            />
-            <h3 className="z-40 mb-2 text-2xl font-bold dark:text-white">
-              Online Marketing
-            </h3>
+            <a
+              href="/services/#online-marketing"
+              className="w-full h-full z-20 overflow-hidden flex flex-col justify-center items-center text-center cursor-pointer"
+            >
+              <Image
+                className="absolute z-20"
+                src="/images/online-marketing.webp"
+                alt=""
+                width={600}
+                height={400}
+              />
+              <h3 className="z-40 mb-2 text-2xl font-bold dark:text-white">
+                Online Marketing
+              </h3>
+            </a>
           </div>
           <div className="services relative h-[50vh] overflow-hidden flex flex-col justify-center items-center text-center cursor-pointer">
-            <Image
-              className="absolute z-20"
-              src="/images/creative-content.webp"
-              alt=""
-              width={600}
-              height={400}
-            />
-            <h3 className="z-40 mb-2 text-2xl font-bold dark:text-white">
-              Content Management
-            </h3>
+            <a
+              href="/services/#content-management"
+              className="w-full h-full z-20 overflow-hidden flex flex-col justify-center items-center text-center cursor-pointer"
+            >
+              <Image
+                className="absolute z-20"
+                src="/images/creative-content.webp"
+                alt=""
+                width={600}
+                height={400}
+              />
+              <h3 className="z-40 mb-2 text-2xl font-bold dark:text-white">
+                Content Management
+              </h3>
+            </a>
           </div>
           <div className="z-30 h-[50vh] flex flex-col justify-center items-start px-8 bg-amber-400">
             <form>

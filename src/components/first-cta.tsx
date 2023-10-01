@@ -13,15 +13,15 @@ const FirstCallToAction = () => {
       <div className="h-full flex flex-col justify-center items-center z-30">
         <div className="space-adjustment mx-auto max-w-4xl sm:max-w-2xl">
           <div className="flex flex-col justify-center items-center text-center py-12 sm:py-4 sm:px-4">
-            <h1 className="hero-title w-[80%] font-bold text-white text-7xl sm:text-4xl leading-tight ">
-              Blazing Fast Data Driven Websites.
+            <h1 className="hero-title font-bold text-white text-7xl sm:text-4xl leading-tight text-center ">
+              Let&apos;s Accelerate Your Business Growth.
             </h1>
-            <p className="mt-6 text-lg leading-8 text-white max-w-3xl">
-              We specialize in crafting responsive websites that focus on user
-              experiences and drive higher conversion rates. Through optimizing
-              your brand message, compelling calls-to-action, and data-driven
-              marketing strategies, we consistently deliver measurable and
-              impactful results.
+            <p className="w-[100%] mx-auto text-center mt-6 text-lg leading-8 text-white max-w-3xl">
+              At Blooming Brands we&apos;re all about providing digital
+              solutions to support your brand growth. We design beautiful, fast
+              websites to engage your clients and showcase your products and
+              services online. Have a project in-mind start the conversation and
+              schedule a call.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
