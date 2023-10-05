@@ -1,4 +1,4 @@
-import LatestNewsPage from "@/clientside/LatestNewsPage";
+import LatestNewsPage from "../../clientside/LatestNewsPage";
 import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Blooming Brands | Latest News",
