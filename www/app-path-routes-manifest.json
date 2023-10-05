@@ -1,10 +1,10 @@
 {
   "/favicon.ico/route": "/favicon.ico",
   "/page": "/",
-  "/about/page": "/about",
   "/contact/page": "/contact",
-  "/latest-news/page": "/latest-news",
+  "/about/page": "/about",
   "/portfolio/page": "/portfolio",
+  "/latest-news/page": "/latest-news",
   "/services/page": "/services",
   "/faq/page": "/faq"
 }

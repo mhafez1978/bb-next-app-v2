@@ -209,7 +209,7 @@ const tree = {
         'latest-news',
         {
         children: ['__PAGE__', {}, {
-          page: [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 42926)), "/Users/mhafez/Desktop/My Portfolio (Node & React)/New GitHub/next projects/next-bb-app-v2/src/app/latest-news/page.tsx"],
+          page: [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 16996)), "/Users/mhafez/Desktop/My Portfolio (Node & React)/New GitHub/next projects/next-bb-app-v2/src/app/latest-news/page.tsx"],
           
         }]
       },
@@ -270,14 +270,14 @@ const routeModule = new AppPageRouteModule({
 
 /***/ }),
 
-/***/ 57763:
+/***/ 96521:
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 22404))
+Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 29206))
 
 /***/ }),
 
-/***/ 22404:
+/***/ 29206:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -379,7 +379,7 @@ const PageHeader = ({ pageTitle })=>{
 
 /***/ }),
 
-/***/ 42926:
+/***/ 16996:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -396,9 +396,9 @@ __webpack_require__.d(__webpack_exports__, {
 var jsx_runtime_ = __webpack_require__(56786);
 // EXTERNAL MODULE: ./node_modules/next/dist/build/webpack/loaders/next-flight-loader/module-proxy.js
 var module_proxy = __webpack_require__(61363);
-;// CONCATENATED MODULE: ./src/client-side/LatestNewsPage.tsx
+;// CONCATENATED MODULE: ./src/clientside/LatestNewsPage.tsx
 
-const proxy = (0,module_proxy.createProxy)(String.raw`/Users/mhafez/Desktop/My Portfolio (Node & React)/New GitHub/next projects/next-bb-app-v2/src/client-side/LatestNewsPage.tsx`)
+const proxy = (0,module_proxy.createProxy)(String.raw`/Users/mhafez/Desktop/My Portfolio (Node & React)/New GitHub/next projects/next-bb-app-v2/src/clientside/LatestNewsPage.tsx`)
 
 // Accessing the __esModule property and exporting $$typeof are required here.
 // The __esModule getter forces the proxy target to create the default export
@@ -431,7 +431,7 @@ const LatestNews = ()=>{
 var __webpack_require__ = require("../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [587,493,773,573,488], () => (__webpack_exec__(56059)));
+var __webpack_exports__ = __webpack_require__.X(0, [587,493,773,477,488], () => (__webpack_exec__(56059)));
 module.exports = __webpack_exports__;
 
 })();

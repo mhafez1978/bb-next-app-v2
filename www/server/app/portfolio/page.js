@@ -209,7 +209,7 @@ const tree = {
         'portfolio',
         {
         children: ['__PAGE__', {}, {
-          page: [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 62950)), "/Users/mhafez/Desktop/My Portfolio (Node & React)/New GitHub/next projects/next-bb-app-v2/src/app/portfolio/page.tsx"],
+          page: [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 80066)), "/Users/mhafez/Desktop/My Portfolio (Node & React)/New GitHub/next projects/next-bb-app-v2/src/app/portfolio/page.tsx"],
           
         }]
       },
@@ -270,14 +270,14 @@ const routeModule = new AppPageRouteModule({
 
 /***/ }),
 
-/***/ 49634:
+/***/ 99032:
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 87207))
+Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 26544))
 
 /***/ }),
 
-/***/ 87207:
+/***/ 26544:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -509,7 +509,7 @@ const PageHeader = ({ pageTitle })=>{
 
 /***/ }),
 
-/***/ 62950:
+/***/ 80066:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -526,9 +526,9 @@ __webpack_require__.d(__webpack_exports__, {
 var jsx_runtime_ = __webpack_require__(56786);
 // EXTERNAL MODULE: ./node_modules/next/dist/build/webpack/loaders/next-flight-loader/module-proxy.js
 var module_proxy = __webpack_require__(61363);
-;// CONCATENATED MODULE: ./src/client-side/PortfolioPage.tsx
+;// CONCATENATED MODULE: ./src/clientside/PortfolioPage.tsx
 
-const proxy = (0,module_proxy.createProxy)(String.raw`/Users/mhafez/Desktop/My Portfolio (Node & React)/New GitHub/next projects/next-bb-app-v2/src/client-side/PortfolioPage.tsx`)
+const proxy = (0,module_proxy.createProxy)(String.raw`/Users/mhafez/Desktop/My Portfolio (Node & React)/New GitHub/next projects/next-bb-app-v2/src/clientside/PortfolioPage.tsx`)
 
 // Accessing the __esModule property and exporting $$typeof are required here.
 // The __esModule getter forces the proxy target to create the default export
@@ -561,7 +561,7 @@ const Portfolio = ()=>{
 var __webpack_require__ = require("../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [587,493,773,805,573,488], () => (__webpack_exec__(77946)));
+var __webpack_exports__ = __webpack_require__.X(0, [587,493,773,805,477,488], () => (__webpack_exec__(77946)));
 module.exports = __webpack_exports__;
 
 })();

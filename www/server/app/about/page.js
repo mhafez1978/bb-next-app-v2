@@ -209,7 +209,7 @@ const tree = {
         'about',
         {
         children: ['__PAGE__', {}, {
-          page: [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 12408)), "/Users/mhafez/Desktop/My Portfolio (Node & React)/New GitHub/next projects/next-bb-app-v2/src/app/about/page.tsx"],
+          page: [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 63795)), "/Users/mhafez/Desktop/My Portfolio (Node & React)/New GitHub/next projects/next-bb-app-v2/src/app/about/page.tsx"],
           
         }]
       },
@@ -270,14 +270,14 @@ const routeModule = new AppPageRouteModule({
 
 /***/ }),
 
-/***/ 46295:
+/***/ 44893:
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 79738))
+Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 35236))
 
 /***/ }),
 
-/***/ 79738:
+/***/ 35236:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -286,7 +286,7 @@ __webpack_require__.r(__webpack_exports__);
 
 // EXPORTS
 __webpack_require__.d(__webpack_exports__, {
-  "default": () => (/* binding */ client_side_AboutPage)
+  "default": () => (/* binding */ clientside_AboutPage)
 });
 
 // EXTERNAL MODULE: external "next/dist/compiled/react/jsx-runtime"
@@ -732,7 +732,7 @@ const TeamSection = ()=>{
 };
 /* harmony default export */ const components_TeamSection = (TeamSection);
 
-;// CONCATENATED MODULE: ./src/client-side/AboutPage.tsx
+;// CONCATENATED MODULE: ./src/clientside/AboutPage.tsx
 /* __next_internal_client_entry_do_not_use__ default auto */ 
 
 
@@ -778,7 +778,7 @@ const AboutPage = ()=>{
         ]
     });
 };
-/* harmony default export */ const client_side_AboutPage = (AboutPage);
+/* harmony default export */ const clientside_AboutPage = (AboutPage);
 
 
 /***/ }),
@@ -818,7 +818,7 @@ const PageHeader = ({ pageTitle })=>{
 
 /***/ }),
 
-/***/ 12408:
+/***/ 63795:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -835,9 +835,9 @@ __webpack_require__.d(__webpack_exports__, {
 var jsx_runtime_ = __webpack_require__(56786);
 // EXTERNAL MODULE: ./node_modules/next/dist/build/webpack/loaders/next-flight-loader/module-proxy.js
 var module_proxy = __webpack_require__(61363);
-;// CONCATENATED MODULE: ./src/client-side/AboutPage.tsx
+;// CONCATENATED MODULE: ./src/clientside/AboutPage.tsx
 
-const proxy = (0,module_proxy.createProxy)(String.raw`/Users/mhafez/Desktop/My Portfolio (Node & React)/New GitHub/next projects/next-bb-app-v2/src/client-side/AboutPage.tsx`)
+const proxy = (0,module_proxy.createProxy)(String.raw`/Users/mhafez/Desktop/My Portfolio (Node & React)/New GitHub/next projects/next-bb-app-v2/src/clientside/AboutPage.tsx`)
 
 // Accessing the __esModule property and exporting $$typeof are required here.
 // The __esModule getter forces the proxy target to create the default export
@@ -870,7 +870,7 @@ const About = ()=>{
 var __webpack_require__ = require("../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [587,493,773,573,488], () => (__webpack_exec__(52488)));
+var __webpack_exports__ = __webpack_require__.X(0, [587,493,773,477,488], () => (__webpack_exec__(52488)));
 module.exports = __webpack_exports__;
 
 })();

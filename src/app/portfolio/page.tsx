@@ -1,4 +1,4 @@
-import PortfolioPage from "@/client-side/PortfolioPage";
+import PortfolioPage from "@/clientside/PortfolioPage";
 import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Blooming Brands | Portfolio",

@@ -2,10 +2,10 @@
   "version": 1,
   "functions": {
     "/about": {},
-    "/contact": {},
     "/faq": {},
-    "/latest-news": {},
+    "/contact": {},
     "/": {},
+    "/latest-news": {},
     "/portfolio": {},
     "/services": {}
   }
