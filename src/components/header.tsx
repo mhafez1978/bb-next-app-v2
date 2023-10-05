@@ -22,7 +22,7 @@ const Header = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 6) {
+      if (window.scrollY > 0) {
         setHeaderScrolled(true);
       } else {
         setHeaderScrolled(false);
@@ -48,13 +48,28 @@ const Header = () => {
       >
         <div className="flex lg:flex-1">
           <a href="/" className="flex flex-row py-2">
-            <span
-              className={
-                "`${headerScrolled} && lg:text-2xl md:text-lg sm:text-md font-black bg-gradient-to-r from-white via-slate-200 to-amber-400 inline-block text-transparent bg-clip-text' font-black bg-gradient-to-r from-red-500 via-slate-200 to-black inline-block text-transparent bg-clip-text "
-              }
-            >
-              blooming brands
-            </span>
+            {path !== "/" && (
+              <span
+                className={`${
+                  headerScrolled
+                    ? "capitalize font-black lg:text-2xl md:text-lg sm:text-md bg-gradient-to-r from-amber-400 via-slate-200 to-amber-400 inline-block text-transparent bg-clip-text"
+                    : "font-black lg:text-2xl md:text-lg sm:text-md bg-gradient-to-r from-slate-950 via-amber-400/30 to-slate-950 inline-block text-transparent bg-clip-text"
+                }`}
+              >
+                blooming brands
+              </span>
+            )}
+            {path === "/" && (
+              <span
+                className={`${
+                  headerScrolled
+                    ? "capitalize font-black lg:text-2xl md:text-lg sm:text-md bg-gradient-to-r from-amber-400 via-slate-200 to-amber-400 inline-block text-transparent bg-clip-text"
+                    : "font-black lg:text-2xl md:text-lg sm:text-md bg-gradient-to-r from-slate-100 via-amber-400/90 to-slate-200 inline-block text-transparent bg-clip-text"
+                }`}
+              >
+                blooming brands
+              </span>
+            )}
           </a>
         </div>
         <div className="flex lg:hidden">
@@ -68,28 +83,53 @@ const Header = () => {
           </button>
         </div>
         <div className="hidden lg:flex lg:gap-x-8">
-          {navigation.map((item) => (
-            <a
-              style={{
-                fontSize: ".85rem",
-                transition: "transform .6s ease",
-                fontWeight: "800",
-              }}
-              key={item.id}
-              href={item.href}
-              className={`${
-                headerScrolled
-                  ? item.href === path
-                    ? "text-amber-400"
-                    : "text-white hover:text-amber-400"
-                  : item.href !== path
-                  ? "text-black hover:text-blue-800"
-                  : "text-blue-800 hover:text-slate-800"
-              }`}
-            >
-              {item.name}
-            </a>
-          ))}
+          {path === "/" &&
+            navigation.map((item) => (
+              <a
+                style={{
+                  fontSize: ".85rem",
+                  transition: "transform .6s ease",
+                  fontWeight: "800",
+                }}
+                key={item.id}
+                href={item.href}
+                className={`${
+                  headerScrolled
+                    ? item.href === path
+                      ? "text-amber-400"
+                      : "text-white hover:text-amber-400"
+                    : item.href !== path
+                    ? "text-white hover:text-amber-400"
+                    : "text-amber-100 hover:text-amber-400"
+                }`}
+              >
+                {item.name}
+              </a>
+            ))}
+
+          {path !== "/" &&
+            navigation.map((item) => (
+              <a
+                style={{
+                  fontSize: ".95rem",
+                  transition: "transform .6s ease",
+                  fontWeight: "800",
+                }}
+                key={item.id}
+                href={item.href}
+                className={`${
+                  headerScrolled
+                    ? item.href === path
+                      ? "text-slate-100"
+                      : "text-slate-300 hover:text-slate-100"
+                    : item.href !== path
+                    ? "text-black hover:text-slate-600"
+                    : "text-slate-700 hover:text-slate-600"
+                }`}
+              >
+                {item.name}
+              </a>
+            ))}
         </div>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <a
@@ -101,7 +141,9 @@ const Header = () => {
               fontWeight: "800",
             }}
           >
-            Clients <span aria-hidden="true">&rarr;</span>
+            <span aria-hidden="true" className="collapse">
+              &rarr;
+            </span>
           </a>
         </div>
       </nav>

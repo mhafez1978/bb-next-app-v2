@@ -15,7 +15,7 @@ const LatestNewsPage = () => {
   return (
     <>
       {loaded === false && (
-        <div className="bg-[#222222] h-[100vh] w-[100vw] top-0 left-0 flex flex-col justify-center items-center">
+        <div className="z-50 absolute right-0 bottom-0 bg-[#222222] h-[100vh] w-[100vw] top-0 left-0 flex flex-col justify-center items-center">
           <span className="sr-only">Loading...</span>
           <Spinner
             aria-label="Warning spinner example"
@@ -23,6 +23,7 @@ const LatestNewsPage = () => {
             size="xl"
             className="w-[300px] h-[300px]"
           />
+          <h1 className="py-8 text-center text-white text-3xl">Loading ...</h1>
         </div>
       )}
       <div>

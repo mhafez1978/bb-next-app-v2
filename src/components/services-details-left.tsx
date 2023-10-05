@@ -9,13 +9,10 @@ const ServiceDetailsLeft = ({
   serviceAltText,
   background,
   color,
-}) => {
+}: any) => {
   return (
     <>
-      <section
-        id={scrollId}
-        className={`bg-${background} text-slate-500 py-10`}
-      >
+      <section id={scrollId} className={`bg-${background} py-10`}>
         <div className="w-[80vw] px-[80px] mx-auto flex flex-row">
           <motion.div
             initial={{ x: "-50vw" }}

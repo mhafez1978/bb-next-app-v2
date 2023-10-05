@@ -132,7 +132,7 @@ const PortfolioPage = () => {
   return (
     <>
       {loaded === false && (
-        <div className="bg-[#222222] h-[100vh] w-[100vw] top-0 left-0 flex flex-col justify-center items-center">
+        <div className="z-50 absolute right-0 bottom-0 bg-[#222222] h-[100vh] w-[100vw] top-0 left-0 flex flex-col justify-center items-center">
           <span className="sr-only">Loading...</span>
           <Spinner
             aria-label="Warning spinner example"
@@ -140,12 +140,13 @@ const PortfolioPage = () => {
             size="xl"
             className="w-[300px] h-[300px]"
           />
+          <h1 className="py-8 text-center text-white text-3xl">Loading ...</h1>
         </div>
       )}
       <div>
         <PageHeader pageTitle="Portfolio" />
         <div className=" max-w-10xl py-10 px-[90px]">
-          <div className="lg:w-[80vw] md:w-[100vw] min-h-[40vh] scroll-m-0 mx-auto z-20">
+          <div className="overflow-y-scroll lg:w-[80vw] md:w-[100vw] h-[80vh] scroll-m-0 mx-auto z-20">
             <ResponsiveMasonry
               // columnsCountBreakPoints={{ 300: 2, 500: 3, 700: 4, 900: 5 }}
               columnsCount={2}

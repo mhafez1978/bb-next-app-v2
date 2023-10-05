@@ -1,10 +1,10 @@
 import "./globals.css";
 import "flowbite";
-import "../../node_modules/flowbite/dist/flowbite.min.css";
-import "../../node_modules/tw-elements/dist/css/tw-elements.min.css";
 import type { Metadata } from "next";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
+import "../../node_modules/flowbite/dist/flowbite.min.css";
+import "../../node_modules/tw-elements/dist/css/tw-elements.min.css";
 import "../../node_modules/slick-carousel/slick/slick.css";
 import "../../node_modules/slick-carousel/slick/slick-theme.css";
 
@@ -44,10 +44,11 @@ export default function RootLayout({
           To begin the development, run `npm start` or `yarn start`.
           To create a production bundle, use `npm run build` or `yarn build`.
           --> */}
+
           <Header />
+
           {children}
           <Footer />
-
           <Script
             strategy="afterInteractive"
             src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"

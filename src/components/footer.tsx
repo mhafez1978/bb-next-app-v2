@@ -18,7 +18,7 @@ const Footer = () => {
               </h2>
               <address className="text-sm">
                 <p style={{ fontSize: ".85rem" }}>
-                  141 John Street, R14 <br />
+                  93 Whipple Street, Suite 3 <br />
                   Lowell, MA 01852
                 </p>
               </address>

@@ -1,6 +1,4 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  distDir: "www",
-};
+const nextConfig = {};
 
 module.exports = nextConfig;

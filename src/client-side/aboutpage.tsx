@@ -3,6 +3,7 @@
 import React, { useEffect, useState } from "react";
 import PageHeader from "@/components/page-header";
 import { Spinner } from "flowbite-react";
+import TeamSection from "@/components/team-section";
 
 interface Props {
   pageTitle?: string;
@@ -17,7 +18,7 @@ const AboutPage = () => {
   return (
     <>
       {loaded === false && (
-        <div className="bg-[#222222] h-[100vh] w-[100vw] top-0 left-0 flex flex-col justify-center items-center">
+        <div className="z-50 absolute bg-[#222222] h-[100vh] w-[100vw] bottom-0 right-0 top-0 left-0 flex flex-col justify-center items-center">
           <span className="sr-only">Loading...</span>
           <Spinner
             aria-label="Warning spinner example"
@@ -25,13 +26,14 @@ const AboutPage = () => {
             size="xl"
             className="w-[300px] h-[300px]"
           />
+          <h1 className="py-8 text-center text-white text-3xl">Loading ...</h1>
         </div>
       )}
 
       <div>
         <PageHeader pageTitle="About" />
         <div className="px-[90px] py-10 mx-auto min-h-[40vh]">
-          <h1 className=" text-red-400">This is About Page !!!</h1>
+          <TeamSection />
         </div>
       </div>
     </>

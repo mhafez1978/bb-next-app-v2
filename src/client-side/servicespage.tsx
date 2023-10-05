@@ -18,7 +18,7 @@ const ServicesPage = () => {
   return (
     <>
       {loaded === false && (
-        <div className="bg-[#222222] h-[100vh] w-[100vw] top-0 left-0 flex flex-col justify-center items-center">
+        <div className="z-50 bg-[#222222] h-[100vh] w-[100vw] absolute top-0 left-0 right-0 bottom-0 flex flex-col justify-center items-center">
           <span className="sr-only">Loading...</span>
           <Spinner
             aria-label="Warning spinner example"
@@ -26,6 +26,7 @@ const ServicesPage = () => {
             size="xl"
             className="w-[300px] h-[300px]"
           />
+          <h1 className="py-8 text-center text-white text-3xl">Loading ...</h1>
         </div>
       )}
 
@@ -40,9 +41,9 @@ const ServicesPage = () => {
           necessitatibus odit corporis ducimus praesentium possimus temporibus
           aliquam, aut, aspernatur reprehenderit asperiores nostrum"
             serviceImage={"/images/web-design-service.png"}
-            serviceAltText={"text1"}
-            background="slate-950"
-            color="white"
+            serviceAltText={"web-design-infographic"}
+            background="slate-400"
+            color="slate-950"
           />
         </div>
         <div className="">
@@ -55,7 +56,7 @@ const ServicesPage = () => {
           aliquam, aut, aspernatur reprehenderit asperiores nostrum"
             serviceImage={"/images/jamstack-apps.png"}
             serviceAltText={"text1"}
-            background="amber-400"
+            background="neutral-100"
             color="black"
           />
         </div>
@@ -69,8 +70,8 @@ const ServicesPage = () => {
           aliquam, aut, aspernatur reprehenderit asperiores nostrum"
             serviceImage={"/images/e-commerce-service.png"}
             serviceAltText={"text2"}
-            background="neutral-100"
-            color="slate-950"
+            background="gray-900"
+            color="neutral-100"
           />
         </div>
         <div>
@@ -83,8 +84,8 @@ const ServicesPage = () => {
           aliquam, aut, aspernatur reprehenderit asperiores nostrum"
             serviceImage={"/images/online-marketing-service.png"}
             serviceAltText={"text1"}
-            background="slate-950"
-            color="white"
+            background="neutral-100"
+            color="slate-950"
           />
         </div>
         <div className="">
@@ -98,7 +99,7 @@ const ServicesPage = () => {
             serviceImage={"/images/content-mgmt-service.png"}
             serviceAltText={"text1"}
             background="amber-400"
-            color="black"
+            color="slate-950"
           />
         </div>
       </div>

@@ -1,4 +1,5 @@
 "use client";
+
 import { motion } from "framer-motion";
 
 const ServiceDetails = ({
@@ -9,7 +10,7 @@ const ServiceDetails = ({
   serviceAltText,
   background,
   color,
-}) => {
+}: any) => {
   return (
     <>
       <section id={scrollId} className={`bg-${background} py-10`}>

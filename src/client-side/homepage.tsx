@@ -27,6 +27,7 @@ const homepage = () => {
             size="xl"
             className="w-[300px] h-[300px]"
           />
+          <h1 className="py-8 text-center text-white text-3xl">Loading ...</h1>
         </div>
       )}
       <motion.div
@@ -39,14 +40,14 @@ const homepage = () => {
       <motion.div
         initial={{ opacity: 0, x: "-100vw" }}
         animate={{ opacity: 1, x: 0 }}
-        transition={{ delay: 0.3 }}
+        transition={{ delay: 0.2 }}
       >
         <SocialProof />
       </motion.div>
       <motion.div
         initial={{ opacity: 0, x: "100vw" }}
         whileInView={{ opacity: 1, x: 0 }}
-        transition={{ delay: 0.6 }}
+        transition={{ delay: 0.3 }}
         viewport={{ once: true }}
       >
         <AboutSection />
@@ -54,7 +55,7 @@ const homepage = () => {
       <motion.div
         initial={{ opacity: 1, x: "100vw" }}
         whileInView={{ opacity: 1, x: 0 }}
-        transition={{ delay: 1.0 }}
+        transition={{ delay: 0.4 }}
         viewport={{ once: true }}
       >
         <ServicesSection />
@@ -62,7 +63,7 @@ const homepage = () => {
       <motion.div
         initial={{ x: "-100vw" }}
         whileInView={{ x: 0 }}
-        transition={{ delay: 1.0 }}
+        transition={{ delay: 0.5 }}
         viewport={{ once: true }}
       >
         <SecondCallToAction />
@@ -70,7 +71,7 @@ const homepage = () => {
       <motion.div
         initial={{ opacity: 0, x: "100vw" }}
         whileInView={{ opacity: 1, x: 0 }}
-        transition={{ delay: 1.0 }}
+        transition={{ delay: 0.6 }}
         viewport={{ once: true }}
       >
         <TestimonialSlider />
