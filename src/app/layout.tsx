@@ -1,8 +1,8 @@
 import "./globals.css";
 import "flowbite";
 import type { Metadata } from "next";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 import "../../node_modules/flowbite/dist/flowbite.min.css";
 import "../../node_modules/tw-elements/dist/css/tw-elements.min.css";
 import "../../node_modules/slick-carousel/slick/slick.css";
