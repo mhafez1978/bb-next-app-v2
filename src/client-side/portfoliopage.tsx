@@ -148,10 +148,9 @@ const PortfolioPage = () => {
         <div className=" max-w-10xl py-10 px-[90px]">
           <div className="overflow-y-scroll lg:w-[80vw] md:w-[100vw] h-[80vh] scroll-m-0 mx-auto z-20">
             <ResponsiveMasonry
-              // columnsCountBreakPoints={{ 300: 2, 500: 3, 700: 4, 900: 5 }}
-              columnsCount={2}
+            // columnsCountBreakPoints={{ 300: 2, 500: 3, 700: 4, 900: 5 }}
             >
-              <Masonry gap={6}>
+              <Masonry gutter="20px" columnsCount={2}>
                 {Folio.map((each) => (
                   <div
                     key={each.id}
