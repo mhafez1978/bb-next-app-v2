@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from "react";
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import { Spinner } from "flowbite-react";
-import PageHeader from "@/components/page-header";
+import PageHeader from "@/components/PageHeader";
 
 interface Props {
   pageTitle?: string;

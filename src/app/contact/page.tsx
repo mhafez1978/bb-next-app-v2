@@ -1,4 +1,4 @@
-import ContactPage from "@/client-side/contactpage";
+import ContactPage from "@/client-side/ContactPage";
 import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Blooming Brands | Contact",

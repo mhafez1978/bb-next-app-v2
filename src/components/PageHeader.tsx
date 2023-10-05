@@ -1,5 +1,5 @@
 import React from "react";
-import BreadCrumbs from "./breadcrumbs";
+import BreadCrumbs from "./BreadCrumbs";
 
 const PageHeader = ({ pageTitle }: { pageTitle: String }) => {
   return (

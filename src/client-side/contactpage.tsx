@@ -1,9 +1,8 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import { Spinner } from "flowbite-react";
-import PageHeader from "@/components/page-header";
-import ContactForm from "@/components/contactForm";
-import Image from "next/image";
+import PageHeader from "@/components/PageHeader";
+import ContactForm from "@/components/ContactForm";
 
 interface Props {
   pageTitle?: string;

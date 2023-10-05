@@ -1,6 +1,6 @@
 "use client";
 
-import MySlider from "./slick-slider";
+import MySlider from "./SlickSlider";
 
 const SocialProof = () => {
   return (

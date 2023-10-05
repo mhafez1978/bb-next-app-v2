@@ -2,14 +2,14 @@
 import React, { useState, useEffect } from "react";
 import { Spinner } from "flowbite-react";
 import { motion } from "framer-motion";
-import FirstCallToAction from "@/components/first-cta";
-import SocialProof from "@/components/social-proof";
-import AboutSection from "@/components/about-section";
-import ServicesSection from "@/components/services-section";
-import TestimonialSlider from "@/components/testimonials-slider";
-import SecondCallToAction from "@/components/second-cta";
+import FirstCallToAction from "@/components/FirstCTA";
+import SocialProof from "@/components/SocialProof";
+import AboutSection from "@/components/AboutSection";
+import ServicesSection from "@/components/ServicesSection";
+import TestimonialSlider from "@/components/TestimonialsSlider";
+import SecondCallToAction from "@/components/SecondCTA";
 
-const homepage = () => {
+const HomePage = () => {
   const [loaded, setLoaded] = useState(false);
 
   useEffect(() => {
@@ -80,4 +80,4 @@ const homepage = () => {
   );
 };
 
-export default homepage;
+export default HomePage;

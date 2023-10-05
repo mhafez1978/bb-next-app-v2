@@ -1,4 +1,4 @@
-import ServicesPage from "@/client-side/servicespage";
+import ServicesPage from "@/client-side/ServicesPage";
 import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Blooming Brands | Services",

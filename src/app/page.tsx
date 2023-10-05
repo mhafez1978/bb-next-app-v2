@@ -1,4 +1,4 @@
-import Homepage from "@/client-side/homepage";
+import HomePage from "@/client-side/HomePage";
 import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: `Blooming Brands | Home`,
@@ -6,7 +6,7 @@ export const metadata: Metadata = {
 };
 
 const Home = () => {
-  return <Homepage />;
+  return <HomePage />;
 };
 
 export default Home;

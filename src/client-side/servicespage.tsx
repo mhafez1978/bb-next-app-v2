@@ -1,10 +1,10 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import PageHeader from "@/components/page-header";
+import PageHeader from "@/components/PageHeader";
 import { Spinner } from "flowbite-react";
-import ServiceDetailsRight from "@/components/services-details-right";
-import ServiceDetailsLeft from "@/components/services-details-left";
+import ServiceDetailsRight from "@/components/ServiceDetailsRight";
+import ServiceDetailsLeft from "@/components/ServiceDetailsLeft";
 
 interface Props {
   pageTitle?: string;

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import PageHeader from "@/components/page-header";
+import PageHeader from "@/components/PageHeader";
 
 export const metadata: Metadata = {
   title: "Blooming Brands | FAQ's",

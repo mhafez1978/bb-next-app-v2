@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import CustomModal from "@/components/service-modal";
+import CustomModal from "@/components/ServiceModal";
 
 const SecondCallToAction = () => {
   return (
