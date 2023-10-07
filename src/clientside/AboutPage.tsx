@@ -1,9 +1,9 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import PageHeader from "@/components/PageHeader";
+import PageHeader from "../components/PageHeader";
 import { Spinner } from "flowbite-react";
-import TeamSection from "@/components/TeamSection";
+import TeamSection from "../components/TeamSection";
 
 interface Props {
   pageTitle?: string;

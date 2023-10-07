@@ -4,7 +4,7 @@
   "/about/page": "/about",
   "/latest-news/page": "/latest-news",
   "/contact/page": "/contact",
-  "/portfolio/page": "/portfolio",
+  "/faq/page": "/faq",
   "/services/page": "/services",
-  "/faq/page": "/faq"
+  "/portfolio/page": "/portfolio"
 }

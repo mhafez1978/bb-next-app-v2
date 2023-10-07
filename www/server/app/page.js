@@ -1308,7 +1308,7 @@ const Home = ()=>{
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [587,493,773,0,506,477], () => (__webpack_exec__(9999)));
+var __webpack_exports__ = __webpack_require__.X(0, [587,493,773,0,506,887], () => (__webpack_exec__(9999)));
 module.exports = __webpack_exports__;
 
 })();

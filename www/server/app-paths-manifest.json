@@ -4,7 +4,7 @@
   "/about/page": "app/about/page.js",
   "/latest-news/page": "app/latest-news/page.js",
   "/contact/page": "app/contact/page.js",
-  "/portfolio/page": "app/portfolio/page.js",
+  "/faq/page": "app/faq/page.js",
   "/services/page": "app/services/page.js",
-  "/faq/page": "app/faq/page.js"
+  "/portfolio/page": "app/portfolio/page.js"
 }

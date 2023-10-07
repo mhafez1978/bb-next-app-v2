@@ -614,7 +614,7 @@ const Services = ()=>{
 var __webpack_require__ = require("../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [587,493,773,0,477,488], () => (__webpack_exec__(23749)));
+var __webpack_exports__ = __webpack_require__.X(0, [587,493,773,0,887,488], () => (__webpack_exec__(23749)));
 module.exports = __webpack_exports__;
 
 })();

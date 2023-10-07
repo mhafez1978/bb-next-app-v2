@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import { Spinner } from "flowbite-react";
-import PageHeader from "@/components/PageHeader";
+import PageHeader from "../components/PageHeader";
 
 interface Post {
   id: number;
