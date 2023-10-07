@@ -2,12 +2,12 @@
 import React, { useState, useEffect } from "react";
 import { Spinner } from "flowbite-react";
 import { motion } from "framer-motion";
-import FirstCallToAction from "../components/FirstCTA";
-import SocialProof from "../components/SocialProof";
-import AboutSection from "../components/AboutSection";
-import ServicesSection from "../components/ServicesSection";
-import TestimonialSlider from "../components/TestimonialsSlider";
-import SecondCallToAction from "../components/SecondCTA";
+import FirstCallToAction from "@/components/FirstCTA";
+import SocialProof from "@/components/SocialProof";
+import AboutSection from "@/components/AboutSection";
+import ServicesSection from "@/components/ServicesSection";
+import TestimonialSlider from "@/components/TestimonialsSlider";
+import SecondCallToAction from "@/components/SecondCTA";
 
 const HomePage = () => {
   const [loaded, setLoaded] = useState(false);
